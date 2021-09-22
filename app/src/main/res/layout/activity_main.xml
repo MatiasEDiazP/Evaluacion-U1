@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nombre/s"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="19dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:hint="Apellidos"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editApellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Género"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="58dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group_1"
+                android:layout_width="390dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="21dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rMasculino"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/rFemenino"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino" />
+
+                <RadioButton
+                    android:id="@+id/rOmitir"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:text="Omitir" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:hint="Dirección"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Seleccione el tipo de direccíon de despacho"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chkHogar"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="false"
+                android:text="Hogar" />
+
+            <CheckBox
+                android:id="@+id/chkTrabajo"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Trabajo" />
+
+            <CheckBox
+                android:id="@+id/chkUrbano"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Urbano" />
+
+            <CheckBox
+                android:id="@+id/chkLimitUrb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Límite urbano" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condiciones:" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCondiciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/condiciones" />
+            </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/chkAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginVertical="20dp"
+            android:text="Acepto las condiciones" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:onClick="confirmarPedido"
+            android:text="CONFIRMAR PEDIDO"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>
